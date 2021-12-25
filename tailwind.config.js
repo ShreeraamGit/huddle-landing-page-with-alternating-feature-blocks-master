@@ -13,7 +13,9 @@ module.exports = {
             colors: {
                 'button': 'hsl(322, 100%, 66%)',
                 'button-hover': 'hsl(300, 69%, 71%)',
-                'blue': 'hsl(193, 100%, 96%)'
+                'blue': 'hsl(193, 100%, 96%)',
+                'greyish-blue':'hsl(208, 11%, 55%)',
+                'dark-cyan':'hsl(192, 100%, 9%)'
             },
         }
     },

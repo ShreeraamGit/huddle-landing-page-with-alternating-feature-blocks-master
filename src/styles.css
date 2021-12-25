@@ -428,6 +428,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
   --tw-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -450,6 +454,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -466,8 +475,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3.5rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .flex{
@@ -514,24 +523,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
-}
-
-.justify-around{
-  justify-content: space-around;
-}
-
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-xl{
@@ -609,6 +602,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -639,8 +647,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.text-greyish-blue{
+  --tw-text-opacity: 1;
+  color: hsl(208 11% 55% / var(--tw-text-opacity));
+}
+
+.text-dark-cyan{
+  --tw-text-opacity: 1;
+  color: hsl(192 100% 9% / var(--tw-text-opacity));
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .drop-shadow-xl{
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-filter);
+}
+
+.drop-shadow-2xl{
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-filter);
 }
 
@@ -664,6 +699,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 2.5rem;
   }
 
+  .lg\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:mt-20{
     margin-top: 5rem;
   }
@@ -680,8 +720,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 7rem;
   }
 
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:ml-24{
     margin-left: 6rem;
+  }
+
+  .lg\:mr-24{
+    margin-right: 6rem;
   }
 
   .lg\:h-10{
@@ -706,6 +754,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .lg\:place-items-center{
@@ -733,24 +785,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 1.25rem;
   }
 
-  .lg\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .lg\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .lg\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
   }
 
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-left{
